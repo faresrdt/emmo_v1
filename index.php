@@ -8,7 +8,7 @@
     <title>Emmobilier</title>
 </head>
 
-<body>
+<body style="background-color:#1abc9c;color:white;">
 
     <h1>Emmobilier</h1>
 
