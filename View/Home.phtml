@@ -1,0 +1,25 @@
+<h1>Bienvenu chez E-MMOBILIER !</h1>
+<h2>DERNIÈRES ANNONCE EN VENTES</h2>
+<div class="location_cards">
+    <?php foreach ($annoncesAchat as $annonceAchat) : ?>
+
+        <div class="card">
+            <div class="card_img"><img src="img/<?= substr($annonceAchat['photo1'], 0, strpos($annonceAchat['photo1'], ".")); ?>/<?= $annonceAchat['photo1']?>" alt=""></div>
+            <div class="card_title">
+                <h4><?= $annonceAchat['titre'] ?></h4>
+            </div>
+            <div class="card_body">
+                <p><?=substr($annonceAchat['description'], 0, 200)?>...</p>
+            </div>
+            <div class="price_link">
+                <div class="price"><strong><?= number_format($annonceAchat['prix'], 0, ' ', ' ')?> €</strong></div>
+                <div class="link"><button class="myButton"><a href="index.php?controller=annonces&task=show&id=<?= $annonceAchat['id'] ?>">Voir</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <a href="index.php?controller=annonces&task=delete&id=<?= $annonceAchat['id'] ?>" onclick="return window.confirm(`Êtes vous sur de vouloir supprimer cet annonce ?!`)">Supprimer</a> -->
+
+    <?php endforeach ?>
+</div>
+<h2>DERNIÈRES ANNONCE EN LOCATION</h2>

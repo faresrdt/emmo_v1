@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/flexgrid.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/flexgrid.css" media="screen" /> -->
+    <title>E-mmobilier</title>
+</head>
+
+
+<body>
+
+    <!-- DEBUT DU HEADER AVEC NAV -->
+    <header id="header">
+        <nav id="navbar">
+            <div class="nav-wrapper">
+
+                <div id="header_logo" class="site-title"><img src="img/logo.png" alt="logo_e-mmobilier"></div>
+
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+                <label for="menu-checkbox" class="menu-toggle"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="27px" viewBox="0 0 34 27" enable-background="new 0 0 34 27" xml:space="preserve">
+                        <rect fill="#000000" width="34" height="4" />
+                        <rect y="11" fill="#000000" width="34" height="4" />
+                        <rect y="23" fill="#000000" width="34" height="4" />
+                    </svg>
+                </label>
+                <ul id="navUl" class="menu">
+                    <li class="navLi "><a href="#">Accueil</a></li>
+                    <li class="navLi "><a href="#">Acheter</a></li>
+                    <li class="navLi "><a href="#">Vendre</a></li>
+                    <li class="navLi "><a href="#">Louer</a></li>
+                    <li class="navLi "><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!-- FIN DU HEADER AVEC NAV -->
+    <div class="promo">
+        <p>
+            En Juin profitez des honoraires offerts sur toutes les transactions !
+        </p>
+    </div>
+
+    <div class="container">
+
+        <?= $pageContent ?>
+
+    </div>
+
+    <footer id="footer">
+        <p class="p_footer">
+            <a href="#">Mentions Légales</a>
+            <a href="#">CGU</a>
+        </p>
+
+        <p class="p_footer">
+            Agence Principale
+            6 Avenue du Colonel Fabien
+            92340 Argenton
+        </p>
+
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+/****************************************************/
+/*                  STYLE GENERAL                   */
+/****************************************************/
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: #000000;
+}
+
+h2 {
+    color: #263d36;
+}
+
+/******************* FONT FACE **********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+/******************* HEADER *************************/
+
+#header {
+    background-color: #FFFFFF;
+    line-height: 1.2;
+    max-width: none;
+    padding: 2em 2em;
+    text-align: center;
+
+}
+
+#header img {
+    display: inline-block;
+    height: 5em;
+    vertical-align: top;
+    width: 6em;
+}
+
+#header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+#header li {
+    margin-top: inherit;
+    border: 1px solid #000000;
+    border-radius: 290486px;
+    background-color: #566b78;
+    color: white;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+#header li:hover {
+    background: #e81c4f;
+    color: white;
+}
+
+
+/* CSS DU MENU NAV*/
+
+
+.menu {
+    display: none;
+    flex-basis: 100%;
+
+}
+
+.menu-checkbox:checked~.menu {
+    display: block;
+}
+
+.menu-checkbox {
+    opacity: 0;
+    position: absolute;
+    top: -1000px;
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.nav-wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+/*FIN CSS MENU*/
+
+
+/******************* BODY *************************/
+
+body {
+
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 0;
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.promo {
+    background: rgb(44, 62, 80);
+    background: linear-gradient(90deg, rgba(44, 62, 80, 1) 0%, rgba(69, 98, 126, 1) 50%, rgba(44, 62, 80, 1) 100%);
+    color: #FFFFFF;
+}
+
+.promo>p {
+    margin: 0;
+    text-align: center;
+    padding: 0.5em;
+    font-family: 'Galada', cursive;
+}
+
+/* CSS DES CARD */
+
+.card {
+    border: 1px #000000 solid;
+}
+
+.card_img {
+    height: 18.75em;
+}
+
+.card_img img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_title {
+    border: 1px #000000 solid;
+    text-align: center;
+}
+
+.card_body {
+    border: 1px #000000 solid;
+    padding: 0.5em;
+}
+
+.price_link {
+    border: 1px #000000 solid;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    height: 5em;
+    align-items: center;
+}
+
+.myButton {
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #2980b9;
+    border: 0;
+    border-bottom: 2px solid #2475ab;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #2475ab;
+    box-shadow: inset 0 -2px #2475ab;
+}
+
+.myButton:hover {
+    background-color: #7e9bbf;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/* FIN CSS DES CARD */
+
+/******************* FOOTER *************************/
+
+#footer {
+
+    background-color: #FFFFFF;
+    line-height: 1.2;
+    max-width: none;
+    padding: 1em 1em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer a {
+
+    color: #000000;
+
+}
+
+.p_footer:first-child {
+    align-self: center;
+    display: grid;
+}
+
+/****************************************************/
+/*                    HOME PAGE                     */
+/****************************************************/
+
+/****************************************************/
+/*                    MEDIA QUERIES                 */
+/*                       DESKTOP                    */
+/****************************************************/
+@media screen and (min-width: 767px) {
+
+    /******************* HEADER *************************/
+
+    #navUl {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /*CSS DU MENU*/
+    .menu-checkbox,
+    .menu-toggle {
+        display: none;
+    }
+}
